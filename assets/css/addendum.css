@@ -1,0 +1,22 @@
+	/* CSS VARIABLES */
+
+:root {
+	--theme-bg-primary-2-light: #ed6524;
+	--theme-bg-primary-2-dark: #2e8dab;
+}
+
+	/* ADDENDUM */
+
+@media (prefers-color-scheme: dark) {
+	html {
+		content: "dark";
+	}
+}
+
+.theme-bg-primary-2[data-theme="light"] {
+	background: var(--theme-bg-primary-2-light);
+}
+
+.theme-bg-primary-2[data-theme="light"] {
+	background: var(--theme-bg-primary-2-dark);
+}
