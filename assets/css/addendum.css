@@ -1,10 +1,3 @@
-	/* CSS VARIABLES */
-
-:root {
-	--theme-bg-primary-2-light: #ed6524;
-	--theme-bg-primary-2-dark: #2e8dab;
-}
-
 	/* ADDENDUM */
 
 @media (prefers-color-scheme: dark) {
@@ -13,10 +6,14 @@
 	}
 }
 
-.theme-bg-primary-2[data-theme="light"] {
-	background: var(--theme-bg-primary-2-light);
+html, html[data-theme="light"] {
+	--theme-bg-primary-2: #ed6524;
 }
 
-.theme-bg-primary-2[data-theme="light"] {
-	background: var(--theme-bg-primary-2-dark);
+html[data-theme="dark"] {
+	--theme-bg-primary-2: #2e8dab;
+}
+
+.theme-bg-primary-2 {
+	background: var(--theme-bg-primary-2);
 }
