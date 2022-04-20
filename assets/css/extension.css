@@ -5,7 +5,6 @@
 	/* CSS VARIABLES */
 
 :root {
-	--main-orange: #ed6524;
 	--main-grey: #f6f8fc;
 	--main-black: #1c1e2e;
 
@@ -58,7 +57,7 @@ div.branding, div.shortcuts {
 }
 
 div.shortcuts {
-	background: var(--main-orange);
+	background: var(--main-theme-color);
 	border-radius: 8em;
 
 	margin-right: 15%;
@@ -82,12 +81,12 @@ span.logo-text {
 
 span.logo-text:hover,
 span.logo-text:focus {
-	color: var(--main-orange);
+	color: var(--main-theme-color);
 }
 
 span.logo-text::before {
 	content: '';
-	background: var(--main-orange);
+	background: var(--main-theme-color);
 
 	position: absolute;
 	height: 0.2em;
@@ -133,7 +132,7 @@ header li {
 }
 
 .card {
-	background: #fff;
+	background: var(--background-deep);
 	border: none;
 
 	display: flex;
@@ -150,7 +149,7 @@ header li {
 }
 
 .toc-tooltip {
-    background: var(--main-orange);
+    background: var(--main-theme-color);
     border-radius: 7em;
 
     position: absolute;
@@ -209,7 +208,7 @@ header li {
 
 .corner::before {
 	content: '';
-	background: var(--main-orange);
+	background: var(--main-theme-color);
 
 	position: absolute;
 	height: 0.2em;
@@ -320,13 +319,13 @@ header li {
 	padding-right: 35vw;
 }
 
-li.selectable { color: var(--main-orange); text-decoration: .1em var(--main-orange) wavy underline; }
-li.selectable2 { color: var(--main-orange); }
+li.selectable { color: var(--main-theme-color); text-decoration: .1em var(--main-theme-color) wavy underline; }
+li.selectable2 { color: var(--main-theme-color); }
 
 	/* FOOTER */
 
 .cjw-footer {
-	background: var(--main-orange);
+	background: var(--main-theme-color);
 	font-family: 'Poppins', sans-serif;
 }
 

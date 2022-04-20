@@ -9,3 +9,24 @@
 .theme-bg-primary-2 {
 	background: var(--theme-bg-primary-2);
 }
+
+body {
+	background: var(--background-deep);
+}
+
+.theme-bg-gradient-2 {
+	background-image: var(--theme-bg-gradient-2);
+}
+
+#theme-toggle { position: absolute; }
+
+.lightbulb {
+	height: auto;
+	width: 2em;
+
+	position: fixed;
+	bottom: 1.2em;
+	left: 1.2em;
+
+	z-index: 2;
+}

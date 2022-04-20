@@ -32,24 +32,57 @@
     <style type="text/css">
 		html, html[data-theme="light"] {
 			--theme-bg-primary-2: #ed6524;
+			--background-deep: #fff;
+			--theme-bg-gradient-2: linear-gradient(to bottom, #f6f8fc 0%, #fff 70%);
+			--logo-text-color: #1c1e2e;
+			--main-theme-color: #ed6524;
+			--primary-text-color: #1c1e2e;
+			--primary-text-color-2: #000;
+			--secondary-text-color: #4c527d;
 		}
 
 		html[data-theme="dark"] {
-			--theme-bg-primary-2: #2e8dab;
+			--theme-bg-primary-2: #013e50;
+			--background-deep: #00141b;
+			--theme-bg-gradient-2: linear-gradient(to bottom, #0a1c20 0%, #00141b 70%);
+			--logo-text-color: #eee;
+			--main-theme-color: #57b0ce;
+			--primary-text-color: #eee;
+			--primary-text-color-2: #fff;
+			--secondary-text-color: #8bbace;
 		}
     </style>
+
+    <!-- In-line Javascript -->
+    <script type="text/javascript">
+    	function onLoadLightbulb() {
+	    	let currentMode = document.documentElement.getAttribute('data-theme');
+    		if (currentMode === "dark") {
+				document.getElementById("lightbulb").style.filter = "invert(100%)";
+			} else {
+				document.getElementById("lightbulb").style.filter = "invert(0%)";
+			}
+		}
+    </script>
 </head> 
 
-<body>
+<body onload="onLoadLightbulb()">
 
 	<script>
 		const theme = localStorage.getItem('theme');
 			if (theme === "dark") {
 				document.documentElement.setAttribute('data-theme', 'dark');
 		}
-	</script>
 
-	<button id="theme-toggle" onclick="modeSwitcher()"></button>
+		function logoChange() {
+			let currentMode = document.documentElement.getAttribute('data-theme');	
+			if (currentMode === "dark") {
+				document.getElementById('site-logo').src="assets/images/new-site-logo - dark.png";
+			} else {
+				document.getElementById('site-logo').src="assets/images/new-site-logo.png";
+			}
+		}
+	</script>
 
 	<main id='modal' class='modal flex-center'>
 		<article>
@@ -93,7 +126,7 @@
         <div class="branding">
             <div class="container-fluid position-relative py-3">
                 <div class="logo-wrapper">
-	                <div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon me-2 logo" src="assets/images/new-site-logo.png" alt="logo"><span class="logo-text">Imperial Corner</span></a></div>
+	                <div class="site-logo"><a class="navbar-brand" href="index.html"><img id='site-logo' class="logo-icon me-2 logo" src="assets/images/new-site-logo.png" alt="logo"><span class="logo-text">Imperial Corner</span></a></div>
                 </div><!--//docs-logo-wrapper-->
 	        
             </div><!--//container-->
@@ -128,7 +161,7 @@
 
     </section><!--//table-of-contents-->
     
-    <section id="benefits-section" class="benefits-section theme-bg-light-gradient py-5">
+    <section id="benefits-section" class="benefits-section theme-bg-gradient-2 py-5">
 	    <div class="container py-5">
 		    <h2 class="section-heading text-center mb-3">What Will You Get From Our Reviews?</h2>
 		    <div class="section-intro single-col-max mx-auto text-center mb-5">When it comes to anime recommendations, we adhere to a golden standard. Every article must pass six virtues.</div>
@@ -533,6 +566,8 @@
 		</div>
 	    
     </footer>
+
+    <button id="theme-toggle" onclick="modeSwitcher();logoChange();"><img id='lightbulb' class='lightbulb' src='assets/fontawesome/svgs/solid/lightbulb.svg' /></button>
        
     <!-- Javascript -->          
     <script src="assets/plugins/popper.min.js"></script>
@@ -553,20 +588,20 @@
     </script>
 
     <script type="text/javascript">
-    	const userPrefers = getComputedStyle(document.documentElement).getPropertyValue('content');	
+    	const userPrefers = getComputedStyle(document.documentElement).getPropertyValue('content');
 
 		if (theme === "dark") {
-			document.getElementById("theme-toggle").innerHTML = "Light Mode";
+			document.getElementById("lightbulb").style.filter = "invert(0%)";
 		} else if (theme === "light") {
-			document.getElementById("theme-toggle").innerHTML = "Dark Mode";
+			document.getElementById("lightbulb").style.filter = "invert(100%)";
 		} else if  (userPrefers === "dark") {
 			document.documentElement.setAttribute('data-theme', 'dark');
 			window.localStorage.setItem('theme', 'dark');
-			document.getElementById("theme-toggle").innerHTML = "Light Mode";
+			document.getElementById("lightbulb").style.filter = "invert(100%)";
 		} else {
 			document.documentElement.setAttribute('data-theme', 'light');
 			window.localStorage.setItem('theme', 'light');
-			document.getElementById("theme-toggle").innerHTML = "Dark Mode";
+			document.getElementById("lightbulb").style.filter = "invert(0%)";
 		}
 
 		function modeSwitcher() {
@@ -574,11 +609,11 @@
 			if (currentMode === "dark") {
 				document.documentElement.setAttribute('data-theme', 'light');
 				window.localStorage.setItem('theme', 'light');
-				document.getElementById("theme-toggle").innerHTML = "Dark Mode";
+				document.getElementById("lightbulb").style.filter = "invert(0%)";
 			} else {
 				document.documentElement.setAttribute('data-theme', 'dark');
 				window.localStorage.setItem('theme', 'dark');
-				document.getElementById("theme-toggle").innerHTML = "Light Mode";
+				document.getElementById("lightbulb").style.filter = "invert(100%)";
 			}
 		}
     </script>

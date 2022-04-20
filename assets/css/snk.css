@@ -23,7 +23,7 @@ button, input[type="submit"], input[type="reset"] {
 
 .margin-normal { margin: 0 10vw 0 10vw }
 
-.orange { color: var(--main-orange); }
+.orange { color: var(--main-theme-color); }
 
 	/* POSITIONS */
 
@@ -102,11 +102,11 @@ button, input[type="submit"], input[type="reset"] {
 }
 
 .snk h2 {
-	text-decoration: 0.2em var(--main-orange) underline;
+	text-decoration: 0.2em var(--main-theme-color) underline;
 }
 
 .snk hr {
-	background: var(--main-orange);
+	background: var(--main-theme-color);
 
 	height: 0.3em !important;
 
