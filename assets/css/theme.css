@@ -73,7 +73,7 @@ a.theme-link:hover {
 
     .btn-primary {
         background:#ed6524;
-        color:#fff
+        color: #fff !important;
     }
 
     .btn-primary:hover,
