@@ -31,7 +31,9 @@ h6, .h6 {
 }
 
 a.theme-link {
-    color:#1c1e2e;
+    background: var(--theme-link-bg);
+    border-radius: 3px;
+    color:var(--theme-link-color);
     text-decoration:underline;
     -webkit-text-decoration-color:rgba(28,30,46,0.3);
     text-decoration-color:rgba(28,30,46,0.3)
@@ -118,7 +120,7 @@ a.theme-link:hover {
         outline:none
     }
 
-    .theme-bg-light { background:#f6f8fc }
+    .theme-bg-primary-3 { background:var(--theme-bg-primary-3); }
     .theme-bg-dark { background:#1c1e2e }
     .theme-bg-primary { background:#ed6524 }
     .theme-bg-light-gradient { background-image:linear-gradient(to bottom, #f6f8fc 0%, #fff 70%) }
@@ -265,7 +267,7 @@ a.theme-link:hover {
         display:inline-block;
         width:36px;
         height:36px;
-        background:#f5a782;
+        background: var(--icon-holder);
         color:#fff;
         text-align:center;
         border-radius:50%;

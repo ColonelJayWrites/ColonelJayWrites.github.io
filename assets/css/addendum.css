@@ -30,3 +30,14 @@ body {
 
 	z-index: 2;
 }
+
+.tertiary-text-color { color: var(--tertiary-text-color); }
+
+a { color: var(--main-theme-color) !important; }
+
+.faded-blue-3 { color: #969cba !important; }
+
+.theme-bg-primary-4 {
+	background: var(--theme-bg-primary-2);
+	color: var(--quaternary-text-color);
+}
