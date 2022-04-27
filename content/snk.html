@@ -23,10 +23,80 @@
 	<!-- Extension CSS -->
 	<link rel="stylesheet" type="text/css" href="../assets/css/extension.css">
 	<link rel="stylesheet" type="text/css" href="../assets/css/snk.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/addendum.css">
+	
+    <!-- In-line CSS -->
+    <style type="text/css">
+		html, html[data-theme="light"] {
+			--theme-bg-primary-2: #ed6524;
+			--theme-bg-primary-3: #f6f8fc;
+			--background-deep: #fff;
+			--theme-bg-gradient-2: linear-gradient(to bottom, #f6f8fc 0%, #fff 70%);
+			--logo-text-color: #1c1e2e;
+			--theme-link-color: #1c1e2e;
+			--theme-link-bg: #fff;
+			--main-theme-color: #ed6524;
+			--primary-text-color: #1c1e2e;
+			--primary-text-color-2: #000;
+			--secondary-text-color: #4c527d;
+			--tertiary-text-color: #4c527d;
+			--quaternary-text-color: #fff;
+			--icon-holder: #f5a782;
+			--corner-list-bg: #fff;
+			--faded-blue: #969cba;
+		}
 
-</head>
+		html[data-theme="dark"] {
+			--theme-bg-primary-2: #013e50;
+			--theme-bg-primary-3: #2e8dab;
+			--background-deep: #00141b;
+			--theme-bg-gradient-2: linear-gradient(to bottom, #0a1c20 0%, #00141b 70%);
+			--logo-text-color: #eee;
+			--theme-link-color: #ed6524;
+			--theme-link-bg: transparent;
+			--main-theme-color: #57b0ce;
+			--primary-text-color: #eee;
+			--primary-text-color-2: #fff;
+			--secondary-text-color: #8bbace;
+			--tertiary-text-color: #eee;
+			--quaternary-text-color: #8bbace;
+			--icon-holder: #2e8dab;
+			--corner-list-bg: #00141b;
+			--faded-blue: #ed6524;
+		}
+    </style>
 
-<body>
+    <!-- In-line Javascript -->
+    <script type="text/javascript">
+    	function onLoadLightbulb() {
+	    	let currentMode = document.documentElement.getAttribute('data-theme');
+    		if (currentMode === "dark") {
+				document.getElementById("lightbulb").style.filter = "invert(100%)";
+			} else {
+				document.getElementById("lightbulb").style.filter = "invert(0%)";
+			}
+		}
+    </script>
+</head> 
+
+<body onload="onLoadLightbulb()">
+
+	<script>
+		const theme = localStorage.getItem('theme');
+			if (theme === "dark") {
+				document.documentElement.setAttribute('data-theme', 'dark');
+		}
+
+		function logoChange() {
+			let currentMode = document.documentElement.getAttribute('data-theme');	
+			if (currentMode === "dark") {
+				document.getElementById('site-logo').src="assets/images/new-site-logo - dark.png";
+			} else {
+				document.getElementById('site-logo').src="assets/images/new-site-logo.png";
+			}
+		}
+	</script>
+
 	<header class="header">	    
         <div class="branding">
             <div class="container-fluid position-relative py-3">
@@ -222,6 +292,43 @@
     		document.getElementById('spoiler-wrap').classList.add('wrn-close');
     	}
 
+    </script>
+    
+        <script type="text/javascript">
+    	const userPrefers = getComputedStyle(document.documentElement).getPropertyValue('content');
+
+		if (theme === "dark") {
+			document.getElementById("lightbulb").style.filter = "invert(0%)";
+		} else if (theme === "light") {
+			document.getElementById("lightbulb").style.filter = "invert(100%)";
+		} else if  (userPrefers === "dark") {
+			document.documentElement.setAttribute('data-theme', 'dark');
+			window.localStorage.setItem('theme', 'dark');
+			document.getElementById("lightbulb").style.filter = "invert(100%)";
+		} else {
+			document.documentElement.setAttribute('data-theme', 'light');
+			window.localStorage.setItem('theme', 'light');
+			document.getElementById("lightbulb").style.filter = "invert(0%)";
+		}
+
+		if (theme === "dark") {
+			document.getElementById('site-logo').src="assets/images/new-site-logo - dark.png";
+		} else {
+			document.getElementById('site-logo').src="assets/images/new-site-logo.png";
+		}
+
+		function modeSwitcher() {
+			let currentMode = document.documentElement.getAttribute('data-theme');
+			if (currentMode === "dark") {
+				document.documentElement.setAttribute('data-theme', 'light');
+				window.localStorage.setItem('theme', 'light');
+				document.getElementById("lightbulb").style.filter = "invert(0%)";
+			} else {
+				document.documentElement.setAttribute('data-theme', 'dark');
+				window.localStorage.setItem('theme', 'dark');
+				document.getElementById("lightbulb").style.filter = "invert(100%)";
+			}
+		}
     </script>
 
 </body>
