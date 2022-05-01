@@ -9,7 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="The Imperial Corner is a website for recommending animes. It hosts a medieval/modern aesthetic, with flashy colours but without forgetting its roots.">
 	<meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
-	<link rel="shortcut icon" href="../assets/images/favicon.ico">
+	<link rel="shortcut icon" href="../favicon.ico">
 
 	<!-- Google Font -->
 	<link href="https://fonts.googleapis.com/css?family=Quicksand:700|Roboto:400,400i,700&display=swap" rel="stylesheet">
@@ -23,20 +23,7 @@
 	<!-- Extension CSS -->
 	<link rel="stylesheet" type="text/css" href="../assets/css/extension.css">
 	<link rel="stylesheet" type="text/css" href="../assets/css/snk.css">
-	<link rel="stylesheet" type="text/css" href="../assets/css/root2.css">
 	<link rel="stylesheet" type="text/css" href="../assets/css/addendum.css">
-
-	<!-- In-line Javascript -->
-    <script type="text/javascript">
-    	function onLoadLightbulb() {
-	    	let currentMode = document.documentElement.getAttribute('data-theme');
-    		if (currentMode === "dark") {
-				document.getElementById("lightbulb").style.filter = "invert(100%)";
-			} else {
-				document.getElementById("lightbulb").style.filter = "invert(0%)";
-			}
-		}
-    </script>
 	
     <!-- In-line CSS -->
     <style type="text/css">
@@ -112,29 +99,11 @@
 		}
 	</script>
 
-<body onload='onLoadLightbulb()'>
-
-	<script>
-		const theme = localStorage.getItem('theme');
-			if (theme === "dark") {
-				document.documentElement.setAttribute('data-theme', 'dark');
-		}
-
-		function logoChange() {
-			let currentMode = document.documentElement.getAttribute('data-theme');	
-			if (currentMode === "dark") {
-				document.getElementById('site-logo').src="../assets/images/new-site-logo - dark.png";
-			} else {
-				document.getElementById('site-logo').src="../assets/images/new-site-logo.png";
-			}
-		}
-	</script>
-
 	<header class="header">	    
         <div class="branding">
             <div class="container-fluid position-relative py-3">
                 <div class="logo-wrapper">
-	                <div class="site-logo"><a class="navbar-brand" href="../index.html"><img id='site-logo' class="logo-icon me-2 logo" src="../assets/images/new-site-logo.png" alt="logo" ><span class="logo-text">Imperial Corner</span></a></div>
+	                <div class="site-logo"><a class="navbar-brand" href="../index.html"><img class="logo-icon me-2 logo" src="../assets/images/new-site-logo.png" alt="logo" ><span class="logo-text">Imperial Corner</span></a></div>
                 </div><!--//docs-logo-wrapper-->
 	        
             </div><!--//container-->
@@ -241,7 +210,7 @@
     		<div>
     			<p>SnK has good composition: particularly with its aerial camera angles and blending of elements.</p>
     			<p>Despite heavy usage of CGI Titans in season 4, MAPPA has blended them well enough to create many decent shots, while keeping up-to-beat with the direction and background art. Still, WIT's camerawork remains unparalleled, with expressive shots here and yonder. From rapid blitzes through the screen to creative entries onto a scene, SnK's cinematography especially flourished under the direction of WIT, although MAPPA's adaptation isn't without its breathtaking sceneries.</p>
-    			<p>SnK seems to take great pleasure in "sunny" or bright shots.</p>
+    			<p>InSnK seems to take great pleasure in "sunny" or bright shots.</p>
 
     			<div class="standard-img">
     				<img class='si-1' src='https://images.saymedia-content.com/.image/t_share/MTc5MTI4ODA3MDI4OTU4MjUz/a-sound-argument-attack-on-titan-season-4-episode-10-review.jpg' alt='The blazing sun.'/>
@@ -310,18 +279,14 @@
 
 			<div class='cjw-footer py-5'>
 				<div>
-					<span><a class='footer-link' target="_blank" href="https://icons8.com/icon/8890/animation"><b>Animation icon</b> by Icons8</a></span>
-					<span><a class='footer-link' target="_blank" href="https://icons8.com/icon/15110/video-editing"><b>Video Editing</b> icon by Icons8</a></span>
-					<span><a class='footer-link' target="_blank" href="https://icons8.com/icon/121115/music"><b>Music icon</b> by Icons8</a></span>
+					<span><a href="https://icons8.com/icon/8890/animation"><b>Animation icon</b> by Icons8</a></span>
+					<span><a href="https://icons8.com/icon/15110/video-editing"><b>Video Editing</b> icon by Icons8</a></span>
+					<span><a href="https://icons8.com/icon/121115/music"><b>Music icon</b> by Icons8</a></span>
 				</div>
 			</div>
 		</div>
 
     </footer>
-
-    <button id="theme-toggle" onclick="modeSwitcher();logoChange();"><img id='lightbulb' class='lightbulb' src='../assets/fontawesome/svgs/solid/lightbulb.svg' /></button>
-
-    <!-- JAVASCRIPT -->
 
     <script type="text/javascript">
     	
@@ -367,43 +332,6 @@
 			}
 		}
     </script>
-
-    <script type="text/javascript">
-    	const userPrefers = getComputedStyle(document.documentElement).getPropertyValue('content');
-
-		if (theme === "dark") {
-			document.getElementById("lightbulb").style.filter = "invert(0%)";
-		} else if (theme === "light") {
-			document.getElementById("lightbulb").style.filter = "invert(100%)";
-		} else if  (userPrefers === "dark") {
-			document.documentElement.setAttribute('data-theme', 'dark');
-			window.localStorage.setItem('theme', 'dark');
-			document.getElementById("lightbulb").style.filter = "invert(100%)";
-		} else {
-			document.documentElement.setAttribute('data-theme', 'light');
-			window.localStorage.setItem('theme', 'light');
-			document.getElementById("lightbulb").style.filter = "invert(0%)";
-		}
-
-		if (theme === "dark") {
-			document.getElementById('site-logo').src="../assets/images/new-site-logo - dark.png";
-		} else {
-			document.getElementById('site-logo').src="../assets/images/new-site-logo.png";
-		}
-
-		function modeSwitcher() {
-			let currentMode = document.documentElement.getAttribute('data-theme');
-			if (currentMode === "dark") {
-				document.documentElement.setAttribute('data-theme', 'light');
-				window.localStorage.setItem('theme', 'light');
-				document.getElementById("lightbulb").style.filter = "invert(0%)";
-			} else {
-				document.documentElement.setAttribute('data-theme', 'dark');
-				window.localStorage.setItem('theme', 'dark');
-				document.getElementById("lightbulb").style.filter = "invert(100%)";
-			}
-		}
-	</script>
 
 </body>
 </html>
