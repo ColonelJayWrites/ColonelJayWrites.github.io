@@ -33,7 +33,7 @@ body {
 
 .tertiary-text-color { color: var(--tertiary-text-color); }
 
-a { color: var(--main-theme-color) !important; }
+a:not(.toc-tooltip-link):not(.footer-link):not(.social-media-icons):not(.getyourcopy) { color: var(--main-theme-color) !important; }
 
 .faded-blue-3 { color: #969cba !important; }
 

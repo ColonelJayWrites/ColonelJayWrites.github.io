@@ -1,0 +1,57 @@
+html, html[data-theme="light"] {
+	--theme-bg-primary-2: #ed6524;
+	--theme-bg-primary-3: #f6f8fc;
+	--background-deep: #fff;
+	--theme-bg-gradient-2: linear-gradient(to bottom, #f6f8fc 0%, #fff 70%);
+	--logo-text-color: #1c1e2e;
+	--theme-link-color: #1c1e2e;
+	--theme-link-bg: #fff;
+	--main-theme-color: #ed6524;
+	--primary-text-color: #1c1e2e;
+	--primary-text-color-2: #000;
+	--secondary-text-color: #4c527d;
+	--tertiary-text-color: #4c527d;
+	--quaternary-text-color: #fff;
+	--icon-holder: #f5a782;
+	--corner-list-bg: #fff;
+	--faded-blue: #969cba;
+	--main-lnr-gdnt: linear-gradient(90deg, #35ffdb 0%, #feff46 100%);
+	--sec-black: #36395e;
+	--sec-black2: #36395e;
+	--main-black: #1c1e2e;
+
+	--blockquote-background: #f9f9f9;
+	--blockquote-border-left: #ccc;
+
+	--table-background-color: #ed6524;
+	--table-text-color: #eee;
+}
+
+html[data-theme="dark"] {
+	--theme-bg-primary-2: #013e50;
+	--theme-bg-primary-3: #2e8dab;
+	--background-deep: #00141b;
+	--theme-bg-gradient-2: linear-gradient(to bottom, #0a1c20 0%, #00141b 70%);
+	--logo-text-color: #eee;
+	--theme-link-color: #ed6524;
+	--theme-link-bg: transparent;
+	--main-theme-color: #57b0ce;
+	--primary-text-color: #eee;
+	--primary-text-color-2: #fff;
+	--secondary-text-color: #8bbace;
+	--tertiary-text-color: #eee;
+	--quaternary-text-color: #8bbace;
+	--icon-holder: #2e8dab;
+	--corner-list-bg: #00141b;
+	--faded-blue: #ed6524;
+	--main-lnr-gdnt: linear-gradient(90deg, #57B7D1 0%, #4B53BA 100%);
+	--sec-black: #8bbace;
+	--sec-black2: #013e50;
+	--main-black: #eee;
+
+	--blockquote-background: #042733;
+	--blockquote-border-left: #245566;
+
+	--table-background-color: #2e8dab;
+	--table-text-color: #eee;
+}

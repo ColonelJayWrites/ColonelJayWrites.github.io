@@ -27,49 +27,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/modal.css">
     <link rel="stylesheet" type="text/css" href="assets/css/snk.css">
     <link rel="stylesheet" type="text/css" href="assets/css/addendum.css">
-
-    <!-- In-line CSS -->
-    <style type="text/css">
-		html, html[data-theme="light"] {
-			--theme-bg-primary-2: #ed6524;
-			--theme-bg-primary-3: #f6f8fc;
-			--background-deep: #fff;
-			--theme-bg-gradient-2: linear-gradient(to bottom, #f6f8fc 0%, #fff 70%);
-			--logo-text-color: #1c1e2e;
-			--theme-link-color: #1c1e2e;
-			--theme-link-bg: #fff;
-			--main-theme-color: #ed6524;
-			--primary-text-color: #1c1e2e;
-			--primary-text-color-2: #000;
-			--secondary-text-color: #4c527d;
-			--tertiary-text-color: #4c527d;
-			--quaternary-text-color: #fff;
-			--icon-holder: #f5a782;
-			--corner-list-bg: #fff;
-			--faded-blue: #969cba;
-			--main-lnr-gdnt: linear-gradient(90deg, #35ffdb 0%, #feff46 100%);
-		}
-
-		html[data-theme="dark"] {
-			--theme-bg-primary-2: #013e50;
-			--theme-bg-primary-3: #2e8dab;
-			--background-deep: #00141b;
-			--theme-bg-gradient-2: linear-gradient(to bottom, #0a1c20 0%, #00141b 70%);
-			--logo-text-color: #eee;
-			--theme-link-color: #ed6524;
-			--theme-link-bg: transparent;
-			--main-theme-color: #57b0ce;
-			--primary-text-color: #eee;
-			--primary-text-color-2: #fff;
-			--secondary-text-color: #8bbace;
-			--tertiary-text-color: #eee;
-			--quaternary-text-color: #8bbace;
-			--icon-holder: #2e8dab;
-			--corner-list-bg: #00141b;
-			--faded-blue: #ed6524;
-			--main-lnr-gdnt: linear-gradient(90deg, #57B7D1 0%, #4B53BA 100%);
-		}
-    </style>
+    <link rel="stylesheet" type="text/css" href="assets/css/root.css">
 
     <!-- In-line Javascript -->
     <script type="text/javascript">
@@ -167,12 +125,12 @@
     	
     		<article class="card">
     			<img class="toc" src="assets/images/avatars/swords-removebg.png" alt="A custom-made graphic of two swords, crossed.">
-    			<div class="toc-tooltip"><a href="/content/snk.html">SnK</a></div>
+    			<div class="toc-tooltip"><a href="content/snk.html" class='toc-tooltip-link'>SnK</a></div>
     		</article>
 
     		<article class="card">
     			<img class="toc" src="assets/images/avatars/crown-removebg.png" alt="A custom-made graphic of a jeweled crown.">
-    			<div class="toc-tooltip"><a href="#">II.</a></div>
+    			<div class="toc-tooltip"><a href="content/ylia.html" class='toc-tooltip-link'>YLiA</a></div>
     		</article>
 
     	</div>
@@ -512,7 +470,7 @@
 			    </div><!--//item-->
 		    </div><!--//row-->
 		    <div class="text-center">
-		        <a class="btn btn-primary" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devbook-free-bootstrap-5-book-ebook-landing-page-template-for-developers/">Get Your Copy Today</a>
+		        <a class="btn btn-primary getyourcopy" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devbook-free-bootstrap-5-book-ebook-landing-page-template-for-developers/">Get Your Copy Today</a>
 		    </div>
 	    </div><!--//container-->
     </section><!--//reviews-section-->
@@ -549,11 +507,11 @@
 			    <div class="author-links text-center pt-4">
 			        <h5 class="text-white mb-4">Follow Author</h5>
 				    <ul class="social-list list-unstyled">
-					    <li class="list-inline-item"><a href="https://twitter.com/3rdwave_themes"><i class="fab fa-twitter"></i></a></li>
-					    <li class="list-inline-item"><a href="https://github.com/xriley"><i class="fab fa-github-alt"></i></a></li> 
-			            <li class="list-inline-item"><a href="https://medium.com/@3rdwave_themes"><i class="fab fa-medium-m"></i></a></li>
+					    <li class="list-inline-item"><a class='social-media-icons' href="https://twitter.com/3rdwave_themes"><i class="fab fa-twitter"></i></a></li>
+					    <li class="list-inline-item"><a class='social-media-icons' href="https://github.com/xriley"><i class="fab fa-github-alt"></i></a></li> 
+			            <li class="list-inline-item"><a class='social-media-icons' href="https://medium.com/@3rdwave_themes"><i class="fab fa-medium-m"></i></a></li>
 			            
-			            <li class="list-inline-item"><a href="https://themes.3rdwavemedia.com/"><i class="fas fa-globe-europe"></i></a></li>
+			            <li class="list-inline-item"><a class='social-media-icons' href="https://themes.3rdwavemedia.com/"><i class="fas fa-globe-europe"></i></a></li>
 			        </ul><!--//social-list-->
 			    </div><!--//author-links-->
 			    
@@ -575,11 +533,11 @@
 
 	    <div class="cjw-footer py-5">
 			<div>
-				<span><a href="https://icons8.com/icon/80152/notepad"><b>Notepad icon</b> by Icons8</a></span>
-			    <span><a href="https://icons8.com/icon/fHrBJTOknk6L/smartphone"><b>Smartphone icon</b> by Icons8</a></span>
-			    <span><a href="https://icons8.com/icon/r9dQywEnasxb/audience"><b>Audience icon</b> by Icons8</a></span>
-			    <span><a href="https://icons8.com/icon/tiqN5HkdkaRU/review"><b>Review icon</b> by Icons8</a></span>
-			    <span><a href="https://icons8.com/icon/61354/creative-commons"><b>Creative Commons</b> icon by Icons8</a></span>
+				<span><a class='footer-link' target="_blank" href="https://icons8.com/icon/80152/notepad"><b>Notepad icon</b> by Icons8</a></span>
+			    <span><a class='footer-link' target="_blank" href="https://icons8.com/icon/fHrBJTOknk6L/smartphone"><b>Smartphone icon</b> by Icons8</a></span>
+			    <span><a class='footer-link' target="_blank" href="https://icons8.com/icon/r9dQywEnasxb/audience"><b>Audience icon</b> by Icons8</a></span>
+			    <span><a class='footer-link' target="_blank" href="https://icons8.com/icon/tiqN5HkdkaRU/review"><b>Review icon</b> by Icons8</a></span>
+			    <span><a class='footer-link' target="_blank" href="https://icons8.com/icon/61354/creative-commons"><b>Creative Commons</b> icon by Icons8</a></span>
 			</div>
 		</div>
 	    
@@ -640,7 +598,6 @@
 				document.getElementById("lightbulb").style.filter = "invert(100%)";
 			}
 		}
-    </script>
-
+	</script>
 
 </body></html>
