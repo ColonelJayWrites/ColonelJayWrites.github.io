@@ -1,607 +1,188 @@
 <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<html lang="en" class="fontawesome-i2svg-active fontawesome-i2svg-complete"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Imperial Corner - Top Anime Recommendations</title>
-    
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The Imperial Corner is a website for recommending animes. It hosts a medieval/modern aesthetic, with flashy colours but without forgetting its roots.">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
-    
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/images/favicon.ico"> 
-    
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:700|Roboto:400,400i,700&display=swap" rel="stylesheet">
-    
-    <!-- FontAwesome JS-->
-    <script defer src="assets/fontawesome/js/all.min.js"></script>
+	<title></title>
 
-    <!-- Theme CSS -->
-    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css">
 
-    <!-- Extension CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/extension.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/modal.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/snk.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/addendum.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/root.css">
-
-    <!-- In-line Javascript -->
-    <script type="text/javascript">
-    	function onLoadLightbulb() {
-	    	let currentMode = document.documentElement.getAttribute('data-theme');
-    		if (currentMode === "dark") {
-				document.getElementById("lightbulb").style.filter = "invert(100%)";
-			} else {
-				document.getElementById("lightbulb").style.filter = "invert(0%)";
-			}
-		}
-    </script>
-</head> 
-
-<body onload="onLoadLightbulb()">
-
-	<script>
-		const theme = localStorage.getItem('theme');
-			if (theme === "dark") {
-				document.documentElement.setAttribute('data-theme', 'dark');
-		}
-
-		function logoChange() {
-			let currentMode = document.documentElement.getAttribute('data-theme');	
-			if (currentMode === "dark") {
-				document.getElementById('site-logo').src="assets/images/new-site-logo - dark.png";
-			} else {
-				document.getElementById('site-logo').src="assets/images/new-site-logo.png";
-			}
-		}
-	</script>
-
-	<main id='modal' class='modal flex-center'>
-		<article>
-
-			<span class='close'>&times;</span>
-
-			<h1>Welcome to the <span class='orange'>Imperial Corner</span>!</h1>
-
-			<div>
-				<h2>What</h2>
-				<p>A web space filled with must-see, must-view and must-listen collection of themes to <strong>help you get through quarantine</strong>.</p>
-			</div>
-
-			<div>
-				<h2>Who</h2>
-				<p>A duo of equally bored, severely stressed and anxious individuals, who coped by trying new things.</p>
-
-				<div class='oneRem'>
-					<span class='tooltip-act'>She</span>
-					<span> is a high school student interested in dabbling in medical technology in the future, erratic taste in music ranging from classical, jazz, pop and even reggae.</span>
-					<div class='popup-tooltip'>Empress Snazzykins</div>
-				</div>
-
-				<div class='oneRem'>
-					<span class='tooltip-act'>He</span>
-					<span> is a highschool student with multiple areas of interest. A jack of all trades, master of none(????). a computer codie, cinematography critique, killer british accent and more!</span>
-					<div class='popup-tooltip'>Commander Marshmallow</div>
-				</div>
-			</div>
-
-			<div>
-				<h2>Why</h2>
-				<p><strike>truthfully it’s our performance task</strike> once my mother told me, love can only burn brighter when shared, so we open our little empire of whimsical wonders and passionate nothings to you all. And hope with sweet anticipation that you would enjoy!</p>
-			</div>
-
-			<blockquote>Best regards, <span class='orange'>Empress Snazzykins</span></blockquote>
-		</article>
-	</main>
-
-    <header class="header">	    
-        <div class="branding">
-            <div class="container-fluid position-relative py-3">
-                <div class="logo-wrapper">
-	                <div class="site-logo"><a class="navbar-brand" href="index.html"><img id='site-logo' class="logo-icon me-2 logo" src="assets/images/new-site-logo.png" alt="logo"><span class="logo-text">Imperial Corner</span></a></div>
-                </div><!--//docs-logo-wrapper-->
-	        
-            </div><!--//container-->
-        </div><!--//branding-->
-
-        <div class="shortcuts">
-        	<ul>
-        		<li><a href="#benefits-section"><img class="icon icon2" src="https://img.icons8.com/ios-filled/50/000000/notepad.png" alt="Notepad Icon from Icons8."></a></li> <!--//promises-->
-        		<li><a href="#hero-section"><img class="icon icon2" src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/50/000000/external-smartphone-online-learning-kiranshastry-solid-kiranshastry-1.png" alt="Smartphone Icon from Icons8."></a></li> <!--//features-->
-        		<li><a href="#form-section"><img class="icon icon2" src="https://img.icons8.com/external-flatart-icons-solid-flatarticons/50/000000/external-audience-strategy-flatart-icons-solid-flatarticons.png" alt="Audience Icon by Icons8."></a></li> <!--//intention-->
-        		<li><a href="#reviews-section"><img class="icon icon2" src="https://img.icons8.com/external-vitaliy-gorbachev-fill-vitaly-gorbachev/50/000000/external-review-social-media-vitaliy-gorbachev-fill-vitaly-gorbachev.png" alt="Review Icon by Icons8."></a></li> <!--//testimonials-->
-        		<li><a href="#author-section"><img class="icon icon2" src="https://img.icons8.com/ios-glyphs/50/000000/creative-commons.png" alt="Creative Commons Icon from Icons8."></a></li> <!--//credits-->
-        	</ul>
-        </div><!--//shortcuts to content-->
-    </header><!--//header-->
-
-    <section class="table-of-contents">
-    	
-    	<div class="cards">
-    	
-    		<article class="card">
-    			<img class="toc" src="assets/images/avatars/swords-removebg.png" alt="A custom-made graphic of two swords, crossed.">
-    			<div class="toc-tooltip"><a href="content/snk.html" class='toc-tooltip-link'>SnK</a></div>
-    		</article>
-
-    		<article class="card">
-    			<img class="toc" src="assets/images/avatars/crown-removebg.png" alt="A custom-made graphic of a jeweled crown.">
-    			<div class="toc-tooltip"><a href="content/ylia.html" class='toc-tooltip-link'>YLiA</a></div>
-    		</article>
-
-    	</div>
-
-    </section><!--//table-of-contents-->
-    
-    <section id="benefits-section" class="benefits-section theme-bg-gradient-2 py-5">
-	    <div class="container py-5">
-		    <h2 class="section-heading text-center mb-3">What Will You Get From Our Reviews?</h2>
-		    <div class="section-intro single-col-max mx-auto text-center mb-5">When it comes to anime recommendations, we adhere to a golden standard. Every article must pass six virtues.</div>
-		    <div class="row text-center">
-			    <div class="item col-12 col-md-6 col-lg-4">
-				    <div class="item-inner p-3 p-lg-4">
-					    <div class="item-header mb-3">
-						    <div class="item-icon"><i class="fas fa-laptop-code"></i></div>
-						    <h3 class="item-heading">History</h3>
-					    </div><!--//item-heading-->
-					    <div class="item-desc">
-						    Each series' history will be tackled in-depth. We seek to discuss every inch of a given franchise, no stone left unturned.
-					    </div><!--//item-desc-->
-				    </div><!--//item-inner-->
-			    </div><!--//item-->
-			    <div class="item col-12 col-md-6 col-lg-4">
-				    <div class="item-inner p-3 p-lg-4">
-					    <div class="item-header mb-3">
-						    <div class="item-icon"><i class="fab fa-js-square"></i></div>
-						    <h3 class="item-heading">Job Security</h3>
-					    </div><!--//item-heading-->
-					    <div class="item-desc">
-						    To our hirees and visitors, we offer a whole suite of security features. Do not fret when you offer us your credit card credentials for no particular reason!
-					    </div><!--//item-desc-->
-				    </div><!--//item-inner-->
-			    </div><!--//item-->
-			    <div class="item col-12 col-md-6 col-lg-4">
-				    <div class="item-inner p-3 p-lg-4">
-					    <div class="item-header mb-3">
-						    <div class="item-icon"><i class="fab fa-rocketchat"></i></div>
-						    <h3 class="item-heading">Communication</h3>
-					    </div><!--//item-heading-->
-					    <div class="item-desc">
-						    We keep in touch with our audience. Via secure telecommunication services, we also deliver content quickly without sacrificing quality.
-					    </div><!--//item-desc-->
-				    </div><!--//item-inner-->
-			    </div><!--//item-->
-			    <div class="item col-12 col-md-6 col-lg-4">
-				    <div class="item-inner p-3 p-lg-4">
-					    <div class="item-header mb-3">
-						    <div class="item-icon"><i class="fab fa-angular"></i></div>
-						    <h3 class="item-heading">A stands for Excellence</h3>
-					    </div><!--//item-heading-->
-					    <div class="item-desc">
-						    What? No it doesn't.
-					    </div><!--//item-desc-->
-				    </div><!--//item-inner-->
-			    </div><!--//item-->
-			    <div class="item col-12 col-md-6 col-lg-4">
-				    <div class="item-inner p-3 p-lg-4">
-					    <div class="item-header mb-3">
-						    <div class="item-icon"><i class="fas fa-code-branch"></i></div>
-						    <h3 class="item-heading">Speed is Key</h3>
-					    </div><!--//item-heading-->
-					    <div class="item-desc">
-						    Our servers are based on Switzerland, noted for its secure and fast connection. Associate branches exist from the South Pole to the North Isles.
-					    </div><!--//item-desc-->
-				    </div><!--//item-inner-->
-			    </div><!--//item-->
-			    <div class="item col-12 col-md-6 col-lg-4">
-				    <div class="item-inner p-3 p-lg-4">
-					    <div class="item-header mb-3">
-						    <div class="item-icon"><i class="fas fa-hand-holding-usd"></i></div>
-						    <h3 class="item-heading">Ad Policy</h3>
-					    </div><!--//item-heading-->
-					    <div class="item-desc">
-						    To ensure user enjoyment, we do not host ads. We wish to be as transparent as possible with our activities.
-					    </div><!--//item-desc-->
-				    </div><!--//item-inner-->
-			    </div><!--//item-->
-		    </div><!--//row-->
-	    </div><!--//container-->
-    </section><!--//benefits-section-->
-
-    <section id='hero-section' class="hero-section">
-
-    	<div class='container py-5'>
-    		<h2 class='section-heading text-center mb-3'>Our Writers</h2>
-    		<div class='section-intro single-col-max mx-auto text-center mb-5'>
-    			A duo of equally bored, severely stressed and anxious individuals who coped by trying new things. They produce our drafts, write-ups, and analyses pages. Meet our writers: the backbone of the Imperial Corner.
-    		</div>
-    	</div>
-
-	    <div class='margin-normal'>
-	    	<div class='cjw-row'>
-	    		<div class='cjw-column'>
-	    			<h3>Nichole Kate S. Ibañez</h3>
-	    			<h4>Empress Snazzykins</h4>
-	    		</div>
-
-	    		<div class='cjw-column'>
-	    			<h3>Remegio M. Sagarino III</h3>
-	    			<h4>Commander Marshmallow</h4>
-	    		</div>
-	    	</div>
-
-	    	<div class='cjw-row'>
-	    		<div class='cjw-column'>
-	    			<div>
-	    				<p>She's a highschool student interested in dabbling in medical technology in the future, with erratic taste in music, ranging from classic, to jazz, pop, and even raggae.</p>
-	    			</div>
-	    		</div>
-
-	    		<div class='cjw-column'>
-	    			<div>
-		    			<p>He's a highschool student, supposed "jack of all trades". He adores Shingeki no Kyojin, despite expressing dissatisfaction with its ending. Still, he tends to judge by the journey, not the destination.</p>
-		    		</div>
-	    		</div>
-	    	</div>
-	    </div><!--//table-flex-->
-    </section><!--//hero-section-->
-    
-    <section id="content-section" class="content-section">
-	    <div class='regal-section'>
-	    	<div class='flex-center'>
-		    	<img class='corner-image' src='assets/images/avatars/crown-removebg.png' alt="Image of the Empress' crown."/>
-		    </div>
-
-		    <div class='flex-center'>
-		    	<div class='relative'>
-			    	<h3 class='corner text-center'>The Empress' Corner</h3>
-				</div>
-			</div>
-
-		    <div>
-		    	<h5 class='corner-subheading faded-blue-3'>Blues & Hues</h5>
-		    	<div class='corner-tooltip'>
-		    		From the Empress' collection of quotes and missives meant to make you reflect on the aspects of life.
-		    	</div>
-
-		    	<div id='corner' class='corner-list'>
-		    		<ul>
-		    			<li class='selectable'><a href='content/leav.html'>Lang Leav</a></li>
-		    			<li class='selectable'><a href='content/gill.html'>Nikita Gill</a></li>
-		    			<li class='selectable'><a href='content/tagore.html'>Rabindranath Tagore</a></li>
-		    			<li>Chinese Proverbs</li>
-		    		</ul>
-		    	</div>
-		    </div><!--//blues&hues-->
-
-		    <div class='relative'>
-		    	<h5 class='corner-subheading-inverse faded-blue-3'>Itchy Feet & Sweet Lips</h5>
-		    	<div class='corner-tooltip tooltip-inverse'>
-		    		Music need not language to be enjoyed or understood.
-		    	</div>
-
-		    	<br />
-		    	<br />
-
-		    	<div class='corner-list list-inverse'>
-		    		<ul>
-		    			<li class='selectable'><a href='content/benben.html'>Ben&Ben</a></li>
-		    			<li class='selectable'><a href='content/maneskin.html'>Måneskin</a></li>
-		    			<li>The Masochism Tango</li>
-		    		</ul>
-		    	</div>
-		    </div><!--//music-->
-
-		    <div>
-		    	<h5 class='corner-subheading faded-blue-3'>Paper Minds</h5>
-		    	<div class='corner-tooltip'>
-		    		Sometimes you need not speak, for a drop of ink, may mink a million think.
-		    	</div>
-
-		    	<div class='corner-list'>
-		    		<ul>
-		    			<li class='selectable2 s-tt hp-s'>Harry Potter (series)</li>
-		    			<li class='selectable2 s-tt pj-s'>Percy Jackson (series)</li>
-		    			<li>Taste of Sky</li>
-		    		</ul>
-		    	</div>
-		    </div><!--//paperminds-->
-	    </div>
-
-	    <hr />
-
-	    <div class='commander-section'>
-	    	<div class='flex-center'>
-	    		<img class='corner-image' src="assets/images/avatars/swords-removebg.png" alt="Image of the Commander's swords.">
-	    	</div>
-
-	    	<div class='flex-center'>
-		    	<div class='relative'>
-			    	<h3 class='corner text-center'>The Commander's Corner</h3>
-			    </div>
-			</div>
-
-	    	<div>
-		    	<h5 class='corner-subheading faded-blue-3'>Transcendence</h5>
-		    	<div class='corner-tooltip'>
-		    		Brevity is the soul of wit.
-		    	</div>
-
-		    	<div class='corner-list'>
-		    		<ul>
-		    			<li>William Shakespeare</li>
-		    			<li>Nelson Mandela</li>
-		    			<li>Immanuel Kant</li>
-		    			<li>Japanese Proverbs</li>
-		    		</ul>
-		    	</div>
-		    </div><!--//blues&hues-->
-
-		    <div class='relative'>
-		    	<h5 class='corner-subheading-inverse faded-blue-3'>Lucid</h5>
-		    	<div class='corner-tooltip tooltip-inverse'>
-		    		Music keeps us sound.
-		    	</div>
-
-		    	<br />
-		    	<br />
-
-		    	<div class='corner-list list-inverse'>
-		    		<ul>
-		    			<li>Hiroyuki Sawano</li>
-		    			<li>SiM</li>
-		    			<li>Masayuki Suzuki</li>
-		    		</ul>
-		    	</div>
-		    </div><!--//music-->
-
-		    <div>
-		    	<h5 class='corner-subheading faded-blue-3'>Affinity</h5>
-		    	<div class='corner-tooltip'>
-		    		A world without words cannot be understood.
-		    	</div>
-
-		    	<div class='corner-list'>
-		    		<ul>
-		    			<li>1984</li>
-		    			<li>SlaughterHouse-Five</li>
-		    			<li>No Longer Human</li>
-		    		</ul>
-		    	</div>
-		    </div><!--//paperminds-->
-	    </div>
-    </section><!--//content-section-->
-    
-    <section id="reviews-section" class="reviews-section py-5">
-	    <div class="container">
-		    <h2 class="section-heading text-center">Review Reviews</h2>
-		    <div class="section-intro text-center single-col-max mx-auto mb-5">See what our visitors are saying. </div>
-		    <div class="row justify-content-center">
-			    <div class="item col-12 col-lg-4 p-3 mb-4">
-				    <div class="item-inner theme-bg-primary-4 rounded p-4">
-					    
-					    <blockquote class="quote">
-					        "Excellent Reviews! Great site! 10/10 would visit again"     
-				        </blockquote><!--//item-->
-				        <div class="source row gx-md-3 gy-3 gy-md-0">
-					        <div class="col-12 col-md-auto text-center text-md-start">
-					            <img class="source-profile" src="assets/images/profiles/profile-1.png" alt="image" >
-					        </div><!--//col-->
-					        <div class="col source-info text-center text-md-start">
-						        <div class="source-name">James Doe</div>
-						        <div class="soure-title">Certified "Not a Robot", Captcha Inc.</div>
-						    </div><!--//col-->
-				        </div><!--//source-->
-				        <div class="icon-holder"><i class="fas fa-quote-right"></i></div>
-				    </div><!--//inner-->
-			    </div><!--//item-->
-			    <div class="item col-12 col-lg-4 p-3 mb-4">
-				    <div class="item-inner theme-bg-primary-4 rounded p-4">
-					    <blockquote class="quote">
-					        "SnK for life 4/5"     
-				        </blockquote><!--//item-->				        
-				        <div class="source row gx-md-3 gy-3 gy-md-0 align-items-center">
-					        <div class="col-12 col-md-auto text-center text-md-start">
-					            <img class="source-profile" src="assets/images/profiles/profile-2.png" alt="image" >
-					        </div><!--//col-->
-					        <div class="col source-info text-center text-md-start">
-						        <div class="source-name">Jean Doe</div>
-						        <div class="soure-title">Lurker, MyAnimeList</div>
-						    </div><!--//col-->
-				        </div><!--//source-->
-				        
-				         <div class="icon-holder"><i class="fas fa-quote-right"></i></div>
-				    </div><!--//inner-->
-			    </div><!--//item-->
-			    <div class="item col-12 col-lg-4 p-3 mb-4">
-				    <div class="item-inner theme-bg-primary-4 rounded p-4">
-					    <blockquote class="quote">
-					        "The associate restaurant is very clean. Kudos to the janitor. You guys should give him a raise."     
-				        </blockquote><!--//item-->
-				        <div class="source row gx-md-3 gy-3 gy-md-0 align-items-center">
-					        <div class="col-12 col-md-auto text-center text-md-start">
-					            <img class="source-profile" src="assets/images/profiles/profile-3.png" alt="image" >
-					        </div><!--//col-->
-					        <div class="col source-info text-center text-md-start">
-						        <div class="source-name">Tom Doe</div>
-						        <div class="soure-title">Janitor, Colonel's Cafe and The Empress' Tray</div>
-						    </div><!--//col-->
-				        </div><!--//source-->
-				         <div class="icon-holder"><i class="fas fa-quote-right"></i></div>
-				    </div><!--//inner-->
-			    </div><!--//item-->
-			    <div class="item col-12 col-lg-4 p-3 mb-4">
-				    <div class="item-inner theme-bg-primary-4 rounded p-4">
-					    <blockquote class="quote">
-					        "Terrible performance. Who coded this garbage?"     
-				        </blockquote><!--//item-->
-				        <div class="source row gx-md-3 gy-3 gy-md-0 align-items-center">
-					        <div class="col-12 col-md-auto text-center text-md-start">
-					            <img class="source-profile" src="assets/images/profiles/profile-4.png" alt="image" >
-					        </div><!--//col-->
-					        <div class="col source-info text-center text-md-start">
-						        <div class="source-name">Alice Doe</div>
-						        <div class="soure-title">Junior Webdev, Imperial Corner</div>
-						    </div><!--//col-->
-				        </div><!--//source-->
-				        <div class="icon-holder"><i class="fas fa-quote-right"></i></div>
-				    </div><!--//inner-->
-			    </div><!--//item-->
-			    <div class="item col-12 col-lg-4 p-3 mb-4">
-				    <div class="item-inner theme-bg-primary-4 rounded p-4">
-					    <blockquote class="quote">
-					        "Interesting CSS. It's very amateurish. I'd say it's just about in the range of two junior high schoolers."     
-				        </blockquote><!--//item-->
-				        <div class="source row gx-md-3 gy-3 gy-md-0 align-items-center">
-					        <div class="col-12 col-md-auto text-center text-md-start">
-					            <img class="source-profile" src="assets/images/profiles/profile-5.png" alt="image" >
-					        </div><!--//col-->
-					        <div class="col source-info text-center text-md-start">
-						        <div class="source-name">Sam Doe</div>
-						        <div class="soure-title"><em>[Classified]</em></div>
-						    </div><!--//col-->
-				        </div><!--//source-->
-				        <div class="icon-holder"><i class="fas fa-quote-right"></i></div>
-				    </div><!--//inner-->
-			    </div><!--//item-->
-		    </div><!--//row-->
-		    <div class="text-center">
-		        <a class="btn btn-primary getyourcopy" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devbook-free-bootstrap-5-book-ebook-landing-page-template-for-developers/">Get Your Copy Today</a>
-		    </div>
-	    </div><!--//container-->
-    </section><!--//reviews-section-->
-    
-    <section id="form-section" class="form-section">
-	    <div class="container">
-		    <div class="lead-form-wrapper single-col-max mx-auto theme-bg-primary-3 rounded p-5">
-			    <h2 class="form-heading text-center">Get A Free Preview</h2>
-			    <div class="form-intro text-center mb-3 tertiary-text-color">Sign up to get a free preview of the next article. <br />The early bird gets the worm!</div>
-			    <div class="form-wrapper mx-auto">					
-					<form class="signup-form row g-2 align-items-center">
-	                    <div class="col-12 col-lg-9">
-	                        <label class="sr-only" for="semail">Email</label>
-	                        <input type="email" id="semail" name="semail1" class="form-control me-md-1 semail" placeholder="Your email">
-	                    </div>
-	                    <div class="col-12 col-lg-3">
-	                        <button type="submit" class="btn btn-primary btn-submit w-100">Send</button>
-	                    </div>
-	                </form><!--//signup-form-->
-			    </div><!--//form-wrapper-->
-		    </div><!--//lead-form-wrapper-->
-	    </div><!--//container-->
-    </section><!--//form-section-->
-
-    <section id="author-section" class="author-section section theme-bg-primary-2 py-5">
-	    <div class="container py-3">
-		    <div class="author-profile text-center mb-5">
-			    <img class="author-pic" src="assets/images/profiles/author-profile.png" alt="image" >
-		    </div><!--//author-profile-->
-		    <h2 class="section-heading text-center text-white mb-3">About The Author</h2>
-		    <div class="author-bio single-col-max mx-auto">
-			    <p>This book landing page template is made by product designer <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers. You can use this template to self-publish and promote your book/ebook. You can easily use platforms such as <a class="theme-link" href="https://gumroad.com/" target="_blank">Gumroad</a> to handle your book payment and delivery.</p>
-			    <p> This template is 100% FREE as long as you <strong>keep the footer attribution link</strong>. You do not have the rights to resell, sublicense or redistribute (even for free) the template on its own or as a separate attachment from any of your work. If you’d like to use this template without the footer attribution link, you can buy the <a class="theme-link" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devbook-free-bootstrap-5-book-ebook-landing-page-template-for-developers/" target="_blank"><strong>commercial license</strong></a>.</p>
-			    <div class="author-links text-center pt-4">
-			        <h5 class="text-white mb-4">Follow Author</h5>
-				    <ul class="social-list list-unstyled">
-					    <li class="list-inline-item"><a class='social-media-icons' href="https://twitter.com/3rdwave_themes"><i class="fab fa-twitter"></i></a></li>
-					    <li class="list-inline-item"><a class='social-media-icons' href="https://github.com/xriley"><i class="fab fa-github-alt"></i></a></li> 
-			            <li class="list-inline-item"><a class='social-media-icons' href="https://medium.com/@3rdwave_themes"><i class="fab fa-medium-m"></i></a></li>
-			            
-			            <li class="list-inline-item"><a class='social-media-icons' href="https://themes.3rdwavemedia.com/"><i class="fas fa-globe-europe"></i></a></li>
-			        </ul><!--//social-list-->
-			    </div><!--//author-links-->
-			    
-		    </div><!--//author-bio-->
-		    
-	    </div><!--//container-->
-    </section><!--//author-section-->
-    
-    
-
-    <footer class="footer">
-
-	    <div class="footer-bottom text-center py-5">
-
-	        <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-            <small class="copyright">Designed with <svg class="svg-inline--fa fa-heart fa-w-16" style="color: #fb866a;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg><!-- <i class="fas fa-heart" style="color: #fb866a;"></i> Font Awesome fontawesome.com --> by <a class="theme-link" href="http://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a> for developers</small>
- 
-	    </div>
-
-	    <div class="cjw-footer py-5">
-			<div>
-				<span><a class='footer-link' target="_blank" href="https://icons8.com/icon/80152/notepad"><b>Notepad icon</b> by Icons8</a></span>
-			    <span><a class='footer-link' target="_blank" href="https://icons8.com/icon/fHrBJTOknk6L/smartphone"><b>Smartphone icon</b> by Icons8</a></span>
-			    <span><a class='footer-link' target="_blank" href="https://icons8.com/icon/r9dQywEnasxb/audience"><b>Audience icon</b> by Icons8</a></span>
-			    <span><a class='footer-link' target="_blank" href="https://icons8.com/icon/tiqN5HkdkaRU/review"><b>Review icon</b> by Icons8</a></span>
-			    <span><a class='footer-link' target="_blank" href="https://icons8.com/icon/61354/creative-commons"><b>Creative Commons</b> icon by Icons8</a></span>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="cover">
+		<div class="title-container">
+			<div id="main-title">
+				<h1>To Break The Ice</h1>
+				<p>
+					As the last desperate German offensive rages on,<br />
+					this Christmas night, let us forget about killing.
+				</p>
 			</div>
 		</div>
-	    
-    </footer>
+	</div>
 
-    <button id="theme-toggle" onclick="modeSwitcher();logoChange();"><img id='lightbulb' class='lightbulb' src='assets/fontawesome/svgs/solid/lightbulb.svg' /></button>
-       
-    <!-- Javascript -->          
-    <script src="assets/plugins/popper.min.js"></script>
-    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
-    <script src="assets/plugins/smoothscroll.min.js"></script> 
-    
-    <script src="assets/js/main.js"></script>
+	<div class='stub'>
+		<p class="byline">Part I</p>
+		<h1 class="story-title">Knock, knock</h1>
+	</div>
 
-    <script type="text/javascript">
+	<div class="story-body">
+		<div class="section">
+			<p>
+				<span class="first-letter">T</span>
+				he snow was ceaseless in its brutality. Allied planes zipped by unperturbed. The dismal roar of their engines groaned against the stillness of late afternoon, then the sky grew quiet.
+			</p>
+			<p>
+				The hut was lonely and still against the barrage of snow overhead. The aged wooden door was weathered and worn, marred with chips, nicks, and the symptoms of harsh winter. The windows were frosted with long icicles hanging above it, but the flickering warmth of wax candles was unmistakable.
+			</p>
+			<p>
+				I rapped my knuckles on the door. The candles blew out. I turned to Ralph, then to my wounded comrade on the snow. Clearly, we weren't welcome.
+			</p>
+			<p>
+				The door opened.
+			</p>
+		</div>
 
-    	var modal = document.getElementById("modal");
-    	var span = document.getElementsByClassName("close")[0];
+		<div class="centered-focus">
+			<figure>
+				<img width="1024" alt="Ardennes-Trees in snow (5)" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Ardennes-Trees_in_snow_%285%29.jpg/1024px-Ardennes-Trees_in_snow_%285%29.jpg"></a>
+				<figcaption>
+					<strong>Ardennes, Belgium:</strong>
+					19 Jan. 2017, the trees of Ardennes covered in snow.
+				</figcaption>
+			</figure>
+		</div>
 
-    	span.onclick = function() {
-			modal.style.display = "none";
-		}
+		<div class="section">
+			<!-- <p>
+				<strong>The Battle of the Bulge</strong>
+				was Adolf Hitler's desperate, last-ditch effort to turn the tide in Nazi Germany's favor on the Western front. It would last for a month and a half, during which the Germans and Allies, amid hails of bullets and artillery, fought a common enemy: the freezing cold. Only six months prior, Allied soldiers landed in Normandy, and many American soldiers still wore their summer uniforms, ill-equipped for the coming winter.
+			</p> -->
+			<p>
+				<strong>Fritz Vincken</strong>
+				missed his father. The war had dragged on for far longer than Father had anticipated, and their weeks-long stay in the hunting cabin he left them had silently turned to months. They were forced here after Allied bombing left them homeless. Deep in the woods, his mother prepared a meagre meal with what little they had.
+			</p>
+			<p>
+				"I know it's Christmas," Elizabeth soothed her son. They both knew his father wasn't coming back this Christmas Eve.
+			</p>
+			<p>
+				Nature had not been kind to this place. At the edge of the Ardennes, Western Germany were deep valleys which carved through broad plateaus, amid thickets of thickly-wooded trees: the Hürtgen Forest. The woods offered reprieve from the terror of bombs and guns, but an air of sadness and uncertainty permeated the cabin nonetheless.
+			</p>
+			<p>
+				Elizabeth held her son close, "If he could come, you know he certainly would."
+			</p>
+			<p>
+				Hubert Vincken: humble baker, husband, father. As the Allies pressed into the Ardennes, he had been called into service to bake for the German army. This, and the snowstorm barreling through, impeded his return.
+			</p>
+			<p>
+				Elizabeth clutched Fritz's shoulder and gave a warm, reassuring squeeze.
+			</p>
+		</div>
 
-    </script>
+		<div class="centered-focus forced-width">
+			<blockquote>«My mother blew out the candle, and went to the door. And I went with her. She opened the door. And there were these soldiers.»</blockquote>
+			<p class="quote-author">- Fritz Vincken from Unsolved Mysteries with Robert Stack, Season 7 and Episode 16</p>
+		</div>
 
-    <script type="text/javascript">
-    	const userPrefers = getComputedStyle(document.documentElement).getPropertyValue('content');
+		<div class="section">
+			<p>A heavy knock interrupted the silence. Fritz let out the one name on his tongue: "Papa?" Immediately, his mother put out the candles and came to the door, with him at her tow. The closest neighbors were miles away.</p>
+			<p>Three armed soldiers greeted them. Two were standing upright; the third was sat on the snow, bleeding. He looked more dead than alive. One began speaking in a language they didn't understand, but one word was familiar.</p>
+			<p>"—Americans." They were Americans.</p>
+			<p>Enemies! Fritz stood stock-still.</p>
+			<p>The soldiers were seeking shelter from the immense cold; that much was clear. The Vinckens spoke no lick of English, but one soldier's haggard expressions and harried gestures said enough.</p>
+			<p>This was already a great departure from their Christmas plans, but a pit of fear started to gnaw on Fritz' gut. Everyone, even children, knew the harsh rule of war: harboring the enemy got you shot.</p>
+			<p>His mother looked, and looked again. At the speaker, then to the other, then to the one sat on the snow. It was Christmas Eve, and the wounded boy looked young enough to be her son.</p>
+			<p>Fritz was nearly-paralyzed with fear. For what felt like an eternity, the Americans pleaded with their eyes and his mother looked, until she finally responded: "Kommt rein."</p>
+			<p>In a flurry of hands, the two who were standing began to help their comrade inside. Mother was stiff but tried to be warm to their unlikely guests. Communication became easier once Elizabeth and one of the men realized they both could speak French. The man said they'd lost their unit three days prior, forcing them to wander the snowy landscape since.</p>
+			<p>They used Mother's offered bed sheets to make makeshift bandages, for the wounded boy had lost a lot of blood. He had been shot in the leg.</p>
+			<p>One tended to him while the other assisted Mother with the food. With more mouths to feed, she told Fritz to fetch more potatoes and Hermann, the rooster she had planned to roast in case Father returned home for dinner (he was named after Hermann Göring: a Nazi leader she wanted to roast herself).</p>
+		</div>
 
-		if (theme === "dark") {
-			document.getElementById("lightbulb").style.filter = "invert(0%)";
-		} else if (theme === "light") {
-			document.getElementById("lightbulb").style.filter = "invert(100%)";
-		} else if  (userPrefers === "dark") {
-			document.documentElement.setAttribute('data-theme', 'dark');
-			window.localStorage.setItem('theme', 'dark');
-			document.getElementById("lightbulb").style.filter = "invert(100%)";
-		} else {
-			document.documentElement.setAttribute('data-theme', 'light');
-			window.localStorage.setItem('theme', 'light');
-			document.getElementById("lightbulb").style.filter = "invert(0%)";
-		}
+		<div class="centered-focus forced-width">
+			<blockquote>«They were very nice, like big boys from the neighborhood, y'know?»</blockquote>
+			<p class="quote-author">- Fritz Vincken from Unsolved Mysteries with Robert Stack, Season 7 and Episode 16</p>
+		</div>
 
-		if (theme === "dark") {
-			document.getElementById('site-logo').src="assets/images/new-site-logo - dark.png";
-		} else {
-			document.getElementById('site-logo').src="assets/images/new-site-logo.png";
-		}
+		<div class="section">
+			<p><strong>Mother was all motherhood</strong>; she worried for the boys. They had been wandering in the freezing cold for the past two days and two nights, after all. Their inclusion in tonight's dinner was certainly unexpected, but she tried her best to make the Americans feel right at home.</p>
+			<p>Knock, knock. Every head turned to the door. "More Americans!" the Vinckens thought.</p>
+			<p>Fritz was almost eager when he opened the door, with his mother in tow, yet he found himself petrified at the sight of the eagle insignia, clutching a wreathed swatsika: Germany's National Emblem, stitched on the breast pocket of each of the four visitors.</p>
+		</div>
 
-		function modeSwitcher() {
-			let currentMode = document.documentElement.getAttribute('data-theme');
-			if (currentMode === "dark") {
-				document.documentElement.setAttribute('data-theme', 'light');
-				window.localStorage.setItem('theme', 'light');
-				document.getElementById("lightbulb").style.filter = "invert(0%)";
-			} else {
-				document.documentElement.setAttribute('data-theme', 'dark');
-				window.localStorage.setItem('theme', 'dark');
-				document.getElementById("lightbulb").style.filter = "invert(100%)";
-			}
-		}
-	</script>
+		<div class='stub'>
+			<p class="byline">Part II</p>
+			<h1 class="story-title">Call from Arms</h1>
+		</div>
 
+		<div class="section">
+			<p><span class="first-letter">M</span>erry Christmas! they greeted. Elizabeth returned the greeting. One of the soldiers explained that they had lost their regiment and sought shelter from the cold.</p>
+			<p>Elizabeth shut the door halfway, leaving the Americans in the room with renewed, confused tension. Her face was pale, Fritz noticed. "You not only will be allowed to warm up, but you get a nice dinner," she whispered, to the delight of the Germans who smelled the aroma.</p>
+			<p>"If you accept our guests."</p>
+			<p>This was the moment of truth. His mother sounded more stern than he had ever heard before.</p>
+			<p>"Americans?" they asked. Elizabeth confirmed, and the Germans raised their arms.</p>
+			<p>The Americans inside realized with a startled frenzy who were outside the door and they, too, raised their arms. The soldiers dug in their trenches and the Vinckens were caught in No Man's Land.</p>
+			<p>Welcome to Death Row.</p>
+			<p>When the German corporal started to object, Elizabeth urged, "It is the Holy Night and there will be no shooting here." She looked at each frost-chilled face, whispering, "Listen. You could be my sons, and so could they in there."</p>
+			<p>She turned to the corporal and spoke softly, "A boy with a gunshot wound, fighting for his life, and his two friends, lost and exhausted as you are." And raised her voice, "This Christmas night, let us forget about killing."</p>
+			<p>For what felt again like an eternity, the Germans remained stone-faced. "Put your arms on the wooden shed," Elizabeth ordered. "And then we come inside, and have a nice, nice Christmas." She went back inside.</p>
+			<p>The Germans put aside their weapons on the woodpile, and followed. Elizabeth required the same of the Americans, speaking to the interpreter rapidly in French. No one would be taken prisoner as was customary, but they had to surrender their weapons as well. They relinquished their guns.</p>
+			<p>Elizabeth turned to her son and told him to fetch more potatoes and more water. Starving men were angry men. She smiled, "We have more mouths to feed."</p>
+		</div>
 
+		<div class="centered-focus forced-width">
+			<blockquote>«For about a minute or two, maybe three, there was a tension.»</blockquote>
+			<p class="quote-author">- Fritz Vincken from Unsolved Mysteries with Robert Stack, Season 7 and Episode 16</p>
+		</div>
+
+		<div class="section">
+			<p><strong>The Germans approached the Americans wearily.</strong> They greeted each other a stiff "Good evening". They sat, minding their own sides, until one of the Germans starting to sing.</p>
+			<p>It was a soft, lonely tune. He was singing <i>Silent Night</i> in Latin. The tune was lonely, then it was not. The table filled with harmony once the Americans joined in, singing in English.
+			<p>Then the food came, and it was warm. Cigarettes were exchanged and the Americans learned that one of the Germans could speak English.</p>
+			<p>While the table was being set up, one of the Germans sat by the wounded boy. "So what do you think?"</p>
+			<p>The lad was lucky. He had lost a lot of blood, but the cold had prevented an infection. What he needed was rest and nourishment. The German produced a first aid kit, alongside a bottle of red wine and a loaf of rye bread.</p>
+			<p>At the edge of the Ardennes, where warplanes zipped by and men died young, hostilities ceased as Americans and Germans sat down together on the dinner table.</p>
+			<p>Mother sat at the head of the table and said grace. It was spontaneous in its nature, like this dinner had been, as she thanked the Lord for being together tonight, peaceful in this terrible war. She was thankful for this dinner, and prayed they would be friendly to each other forever, if possible.</p>
+			<p>She prayed for an end to this war, which had snuffed out too many of the young and the old. She prayed for the death and destruction to end, so everyone could go home soon. Fritz saw tears in his mother's eyes. He looked around. Everyone was crying, all far from home.</p>
+			<p>They ate and the room filled with warmth.</p>
+			<p>After dinner, the soldiers filed out, gazing at the night sky. The Vinckens joined them, and they all gave thanks in their own way. They would talk and sleep under the same roof, the hostilities of war set aside for this one Christmas night.</p>
+		</div>
+
+		<div class="centered-focus forced-width">
+			<blockquote>«Be careful, boys. I want you to get home someday where you belong. God bless you all!»</blockquote>
+			<p class="quote-author">- Elizabeth Vincken</p>
+		</div>
+
+		<div class="section">
+			<p>The sun rose and the soldiers prepared to depart. The German corporal gave the Americans a map and a compass, showing them certain areas. It was the best way to return to their lines safely, he said.</p>
+			<p>Why not Monschau? one asked. It was where they were originally headed. "Nein, we've retaken Monschau!"</p>
+			<p>Fritz wondered what would have become of the Americans had it not been for the German's warning.</p>
+			<p>Before leaving, the group fashioned a stretcher for the injured American, retrieved their weapons, and shook hands, heading off for opposite directions.</p>
+			<p>"Be careful, boys," Elizabeth called out. "I want you to get home someday where you belong. God bless you all!"</p>
+			<p>Five months later, the war ended, and the Vinckens reunited.</p>
+		</div>
+
+		<div class='stub'>
+			<p class="byline">Part III</p>
+			<h1 class="story-title">Where are you?</h1>
+		</div>
+
+		<div class="section">
+			<p><span class="first-letter">F</span>ritz never forgot that night. That Christmas dinner in 1944 remained a defining moment of his life.</p>
+			<p>In the 1960s, Fritz moved to the United States and opened a bakery in Honolulu, Hawaii, continuing his father's line of work. Still, he yearned to meet the men again, having their story published in Reader's Digest (with a mention from then-President Ronald Reagan in his 1985 address). Still, their reunion eluded him, until 1995, when he appeared on <i>Unsolved Mysteries</i>, telling their story to all who would listen.</p>
+			<p>"It showed me what my mother could do," Fritz said. "And it showed me what one single human being can do to avoid bloodshed, and bring peace."</p>
+			<p>It was a learning experience as well, during a time when fanatical devotion and racism were German education. "And it also showed me at a very early age that we are all alike. No matter what uniform we wear, we have the same joys, the same sorrows, the same problems."</p>
+			<p><strong>Ten hours away by flight, in Maryland, D.C.</strong>, a nursing home chaplain would recognize the story. It was one of those stories that flew around—told again and again by resident Ralph Bank.</p>
+			<p>"And it was a very significant experience." Fritz had concluded the episode. "I never forgot it."</p>
+			<p>In 1996, Fritz flew to Maryland to reunite with Ralph. They looked and saw the young boys they had been, and talked again about that Christmas dinner, only miles away from the fighting and months away from the war's end.</p>
+			<p>A local student would interview Fritz in 1997 about that peaceful night:</p>
+			<p>"Many years have gone since that bloodiest of all wars, but the memories of that night in the Ardennes never left me. The inner strength of a single woman, who, by her wits and intuition, prevented potential bloodshed, taught me the practical meaning of the words: 'Good will Toward Mankind.' Now and then, on a clear tropical winter night, I look at the skies for bright Sirius and we always seem to greet each other like old friends. Then, unfailingly, I remember mother and those seven young soldiers, who met as enemies and parted as friends, right in the middle of the battle of the Bulge."</p>
+		</div>
+	</div>
 </body>
 </html>
-
-</body></html>

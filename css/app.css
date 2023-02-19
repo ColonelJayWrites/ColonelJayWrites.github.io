@@ -1,0 +1,167 @@
+body {
+  color: #222;
+  font-family: 'Inter', georgia, sans-serif;
+  font-style: normal;
+  line-height: 1.7;
+
+  margin: 0;
+
+  box-sizing: border-box;
+  cursor: default;
+}
+
+div { margin: 0; }
+
+.cover {
+  background-image: url('../images/cover.png');
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+}
+
+.cover:after {
+  background-image: url('../images/cover.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  content: '';
+  filter: blur(.25em);
+  z-index: 0;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 2.5em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+#main-title h1 {
+  color: white;
+  font-family: georgia, monospace !important;
+  font-size: 3em;
+  text-shadow: 1px 1px 3px #222;
+
+  margin: 0;
+}
+
+#main-title p {
+  color: #eee;
+  font-family: georgia, monospace !important;
+  font-size: 1.5em;
+  line-height: 1.4;
+  text-shadow: 1px 1px 2px #222;
+
+  margin: 0;
+}
+
+p.byline {
+  color: #777;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-size: 1em;
+
+  margin-top: 8vh;
+  margin-bottom: 0 !important;
+}
+
+.story-body {
+  margin: 0 auto 0 auto;
+  width: 100%;
+  max-width: 85%;
+  float: none;
+}
+
+.story-title {
+  font-family: 'EB Garamond', sans-serif;
+  font-size: 3em;
+  text-align: center;
+}
+
+.section {
+  display: block;
+
+  margin: 0 auto 3em auto;
+  width: 60%;
+  max-width: 50vw;
+}
+
+.section > p {
+  font-size: 1.1em;
+  text-align: left;
+
+  margin-bottom: 1em;
+}
+
+.first-letter {
+  font-family: georgia, sans-serif;
+  font-size: 7em;
+  float: left;
+  line-height: 120px;
+
+  margin: 10px 20px -10px 0;
+}
+
+.centered-focus {
+  text-align: center;
+  margin: 5em 0 5em 0;
+
+  float: none !important;
+}
+
+.centered-focus > figure > img { max-width: 50%; }
+
+.centered-focus > figure > figcaption {
+  color: gray;
+  font-size: 15px;
+
+  margin-bottom: 1em;
+  padding-top: 1rem
+}
+
+blockquote {
+  color: black;
+  font-family: georgia, sans-serif;
+  font-size: 1.7em;
+  text-align: left;
+
+  margin-bottom: 0.3em;
+}
+
+.forced-width {
+  margin-right: auto;
+  margin-left: auto; 
+  max-width: 75%;
+}
+
+.quote-author {
+  color: black;
+  font-size: 1em;
+  font-style: italic !important;
+  text-align: left;
+
+  margin-top: 0;
+  margin-left: 1em;
+}

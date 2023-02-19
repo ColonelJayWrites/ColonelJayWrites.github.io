@@ -1,0 +1,54 @@
+@media only screen and (max-width: 600px) {
+  .cover {
+    height: 85vh !important;
+  }
+
+  #main-title h1 {
+    font-size: 2em;
+    text-shadow: 2px 2px 5px #111;
+  }
+
+  #main-title p {
+    font-family: 'Inter', sans-serif !important;
+    font-size: 1em;
+    font-weight: 500;
+  }
+
+  p.byline {
+    font-size: .75em !important;
+  }
+
+  .story-title {
+    font-size: 2.5em;
+  }
+
+  .section {
+    width: 90%;
+    max-width: none;
+  }
+
+  .section > p {
+    font-size: 1em;
+  }
+
+  .first-letter {
+    font-size: 5.5em;
+  }
+
+  .centered-focus > figure > img {
+    width: 100%;
+    max-width: none !important;
+  }
+
+  blockquote {
+    font-size: 1.5em !important;
+  }
+
+  .forced-width {
+    max-width: none !important;
+  }
+
+  .quote-author {
+    font-size: .8em !important;
+  }
+}
